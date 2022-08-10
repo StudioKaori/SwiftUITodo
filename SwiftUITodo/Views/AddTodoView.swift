@@ -13,7 +13,13 @@ struct AddTodoView: View {
     // MARK: - Body
     var body: some View {
         NavigationView {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            VStack {
+                Form {
+                    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                }
+            } //: Vstack
+            .navigationTitle("New Todo")
+            .navigationBarTitleDisplayMode(.inline)
         }  //: Navigation
     }
 }
