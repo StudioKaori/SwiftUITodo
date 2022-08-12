@@ -20,7 +20,15 @@ struct AddTodoView: View {
         NavigationView {
             VStack {
                 Form {
-                    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                    // MARK: - Todo name
+                    TextField("Todo", text: $name)
+                    
+                    // MARK: - Todo Prioirity
+                    Picker("Priority", selection: $priority) {
+                        ForEach(priorities, id: \.self) {
+                            Text($0)
+                        }
+                    }
                 }
                 
                 Spacer()
