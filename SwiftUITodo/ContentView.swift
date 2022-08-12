@@ -13,10 +13,18 @@ struct ContentView: View {
     // MARK: - Body
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List(0 ..< 5) { item in
+                Text("Hello world")
+            } //: List
+            .navigationTitle("Todo")
+            .navigationBarTitleDisplayMode(.inline)
+        } //: Navigation view
+        
     }
 }
 
+// MARK: - Preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
