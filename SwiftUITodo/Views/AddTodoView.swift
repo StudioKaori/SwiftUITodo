@@ -10,6 +10,8 @@ import SwiftUI
 struct AddTodoView: View {
     // MARK: - Properties
     
+    @Environment(\.presentationMode) var presentationMode
+    
     @State private var name: String = ""
     @State private var priority: String = "Normal"
     
@@ -44,6 +46,13 @@ struct AddTodoView: View {
             } //: Vstack
             .navigationTitle("New Todo")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar(content: {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }, label: {
+                    Image(systemName: "xmark")
+                })
+            })
         }  //: Navigation
     }
 }
