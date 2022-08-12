@@ -29,6 +29,15 @@ struct AddTodoView: View {
                             Text($0)
                         }
                     }
+                    .pickerStyle(SegmentedPickerStyle())
+                    
+                    // MARK: - Save button
+                    Button(action: {
+                        print("Save a new todo item")
+                    }, label: {
+                        Text("Save")
+                        
+                    })
                 }
                 
                 Spacer()
