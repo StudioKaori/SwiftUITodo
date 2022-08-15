@@ -58,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				4324621528A3EF780084E909 /* SwiftUITodoApp.swift */,
-				4324622B28A693BF0084E909 /* ContentView.swift */,
 				4324622828A3FADB0084E909 /* Views */,
 				4324621928A3EF7A0084E909 /* Assets.xcassets */,
 				4324621E28A3EF7A0084E909 /* Persistence.swift */,
@@ -79,6 +78,7 @@
 		4324622828A3FADB0084E909 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4324622B28A693BF0084E909 /* ContentView.swift */,
 				4324622928A3FAF70084E909 /* AddTodoView.swift */,
 			);
 			path = Views;
