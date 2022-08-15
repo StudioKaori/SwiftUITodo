@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ContentView: View {
+    // 被管理オブジェクトコンテキスト（ManagedObjectContext）の取得
+    @Environment(\.managedObjectContext) private var viewContext
+    
     // MARK: - Properties
     @State private var showingAddTodoView: Bool = false
     // MARK: - Body
